@@ -7,7 +7,7 @@ A Gatsby theme for creating a blog child theme. It includes all of the data stru
 1. Install the theme
 
 ```shell
-npm install gatsby-theme-blog-core
+npm install @dseoane/gatsby-theme-blog-core
 ```
 
 2. Add the configuration to your `gatsby-config.js` file
