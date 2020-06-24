@@ -82,7 +82,15 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         },
         description: {
           type: `String!`,
-          resolve: source => source.description || mdxResolverPassthrough(`excerpt`),
+          args: {
+            pruneLength: {
+              type: `Int`,
+              defaultValue: 140,
+            },
+          },
+          resolve: (source, args, context, info) =>
+            source.description ||
+            mdxResolverPassthrough(`excerpt`)(source, args, context, info),
         },
         date: { type: `Date!`, extensions: { dateformat: {} } },
         excerpt: {
