@@ -17,14 +17,14 @@ npm install @dseoane/gatsby-theme-blog-core
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-theme-blog-core`,
+      resolve: `@dseoane/gatsby-theme-blog-core`,
       options: {
         // basePath defaults to `/`
         basePath: `/blog`,
       },
     },
   ],
-}
+};
 ```
 
 3. Add blog posts to your site by creating `md` or `mdx` files inside `/content/posts`.
@@ -37,44 +37,29 @@ module.exports = {
 
 ### Theme options
 
-| Key                      | Default value    | Description                                                                      |
-| ------------------------ | ---------------- | -------------------------------------------------------------------------------- |
-| `basePath`               | `/`              | Root url for all blog posts                                                      |
-| `contentPath`            | `content/posts`  | Location of blog posts                                                           |
-| `assetPath`              | `content/assets` | Location of assets                                                               |
-| `mdxOtherwiseConfigured` | `false`          | Set this flag `true` if `gatsby-plugin-mdx` is already configured for your site. |
-
-#### Example usage
-
-```js
-// gatsby-config.js
-module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-theme-blog-core`,
-      options: {
-        // basePath defaults to `/`
-        basePath: `/blog`,
-      },
-    },
-  ],
-}
-```
+| Key                      | Default value    | Description                                                                     |
+| ------------------------ | ---------------- | ------------------------------------------------------------------------------- |
+| `basePath`               | `/`              | Root url for all blog posts                                                     |
+| `contentPath`            | `content/posts`  | Location of blog posts                                                          |
+| `assetPath`              | `content/assets` | Location of assets                                                              |
+| `disablePostsPage`       | `false`          | Set this flag `true` if you don't want to generate the posts page               |
+| `mdxOtherwiseConfigured` | `false`          | Set this flag `true` if `gatsby-plugin-mdx` is already configured for your site |
 
 ### Blog Post Fields
 
 The following are the defined blog post fields based on the node interface in the schema
 
-| Field    | Type     |
-| -------- | -------- |
-| id       | String   |
-| slug     | String   |
-| noindex  | Boolean  |
-| featured | Boolean  |
-| image    | File     |
-| title    | String   |
-| date     | Date     |
-| excerpt  | String   |
-| body     | String   |
-| category | String   |
-| tags     | [String] |
+| Field       | Type     |
+| ----------- | -------- |
+| id          | String   |
+| slug        | String   |
+| noindex     | Boolean  |
+| featured    | Boolean  |
+| image       | File     |
+| title       | String   |
+| description | String   |
+| date        | Date     |
+| excerpt     | String   |
+| body        | String   |
+| category    | String   |
+| tags        | [String] |

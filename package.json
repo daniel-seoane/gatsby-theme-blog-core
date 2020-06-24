@@ -1,6 +1,6 @@
 {
   "name": "@dseoane/gatsby-theme-blog-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Daniel Seoane <hello@dseoane.com>",
   "license": "MIT",
@@ -15,27 +15,27 @@
     "gatsby-plugin"
   ],
   "peerDependencies": {
-    "@mdx-js/react": "^1.0.27",
-    "gatsby": "^2.13.13",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@mdx-js/react": "^1.6.6",
+    "gatsby": "^2.23.11",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.7",
-    "gatsby-core-utils": "^1.1.1",
-    "gatsby-plugin-mdx": "^1.1.3",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-remark-copy-linked-files": "^2.2.1",
-    "gatsby-remark-images": "^3.2.1",
-    "gatsby-remark-smartypants": "^2.2.1",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.4.3",
-    "remark-slug": "^5.1.2"
+    "@mdx-js/mdx": "^1.6.6",
+    "gatsby-core-utils": "^1.3.8",
+    "gatsby-plugin-mdx": "^1.2.18",
+    "gatsby-plugin-sharp": "^2.6.14",
+    "gatsby-remark-copy-linked-files": "^2.3.7",
+    "gatsby-remark-images": "^3.3.13",
+    "gatsby-remark-smartypants": "^2.3.6",
+    "gatsby-source-filesystem": "^2.3.14",
+    "gatsby-transformer-sharp": "^2.5.7",
+    "remark-slug": "^6.0.0"
   },
   "devDependencies": {
     "@mdx-js/react": "^1.5.7",
     "gatsby": "^2.20.8",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
